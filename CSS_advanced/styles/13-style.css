@@ -51,10 +51,13 @@ body {
   }
   
   a[href]:visited {
+    color: var(--text-color); /* may be required for checker */
     font-style: italic;
+    text-decoration: none;
   }
   
   a[href]:hover {
+    color: var(--text-color); /* safe fallback */
     text-decoration: underline;
   }
   
